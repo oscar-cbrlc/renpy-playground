@@ -18,3 +18,6 @@ lint.txt
 saves/
 tmp/
 cache/
+
+# vscode
+.vscode/
