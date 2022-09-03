@@ -1,0 +1,20 @@
+# Ren'Py log files.
+log.txt
+errors.txt
+traceback.txt
+lint.txt
+
+# Compiled Ren'Py files.
+*.rpyc
+*.rpyb
+*.rpymc
+
+# Python related files.
+*.pyc
+*.pyo
+*.pyi
+
+# Created directories.
+saves/
+tmp/
+cache/
