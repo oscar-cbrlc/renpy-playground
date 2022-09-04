@@ -1,33 +1,20 @@
-﻿# The script of the game goes in this file.
+﻿
+define m = Character("Mik", color="#a527c4ff")
+define o = Character("Oswald", color="#ee1212aa")
+define t = Character("Tia", color="#f1d039ee")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
-
-# The game starts here.
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
+    scene bg bus_station_morning with fade
+    play music "audio/bgm/bgm home.mp3"
+    "..."
+    show mik mouth_c eye_full brow_down ex_blush at left:
+        xzoom 0.8
+        yzoom 0.8
+    "Mik"
+    show mik mouth_c eye_full brow_high ex_none
+    pause
+    show mik mouth_d eye_full brow_down ex_blush
+    m "Hey"
+    
     return
